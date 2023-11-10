@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="a">
+<div class="card">
+    <div class="container">
+
+<h1 style="text-align: center;">SignUp Form</h1>
+<form id="signup-form"  >
+    <div class="first">
+        <label for="name">Name</label><br><br>
+    <input type="text" id="name" placeholder="Enter your name" name="name" /><br><br>
+    </div>
+    <div class="second">
+        <label for="number">Number</label><br><br>
+    <input type="number "id="number" placeholder="Enter your Phone number" name="number" /><br><br>
+    </div>
+<div class="third">
+    <label for="email">Email:</label><br><br>
+<input type="email" id="email" placeholder="Enter your email" name="email" /><br><br>
+</div>
+<div class="four">
+    <label for="password">Password:</label><br><br>
+    <input type="password" id="password" placeholder="Enter your email" name="password" /><br><br>
+</div>
+  <button type="button" onclick="redirect()"> SignUp</button>
+  <p>Already have an account?<a href="index.html">Login</a></span></p>
+  </form>
+    </div>
+</div>
+</div>
+
+<script>
+    function redirect(){
+        var name=document.getElementById("name").value;
+        var number=document.getElementById("number").value;
+
+        var email=document.getElementById("email").value;
+        var password=document.getElementById("password").value;
+
+        if(name!=="" && number!=="" && email!=="" && password!== ""){
+        window.location.href='search.html';
+        }
+        else{
+            alert("please fill the details");
+        }
+    }
+ </script> 
+</body>
+</html>

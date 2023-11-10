@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <div id="a">
+    <div class="card">
+        <div class="contain">
+    <h1 style="text-align: center;">Login Form</h1>
+    <form id="login-form">
+    <div class="first">
+        <label for="email" >Email</label><br><br>
+    <input type="email" id="email" placeholder="Enter your email"><br><br>
+    <div class="second">
+        <label for="password">Password</label><br><br>
+        <input type="password" id="password" placeholder="Enter your password" ><br><br>
+    </div>
+      <button type="button" onclick="redirect()"> Login</button><br>
+      <p>Don't have an account? <span style="color: blue;"><a href="sign.html">Create Account</a></span></p>
+      </form>
+    
+    
+      </div>
+    </div>
+     
+</div>
+ <script>
+    function redirect(){
+        var email=document.getElementById("email").value;
+        var password=document.getElementById("password").value;
+
+        if(email!=="" && password!== ""){
+        window.location.href='search.html';
+        }
+        else{
+            alert("please fill the details");
+        }
+    }
+ </script>    
+
+</body>
+</html>
